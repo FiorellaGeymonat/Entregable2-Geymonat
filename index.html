@@ -9,6 +9,8 @@
 <body>
   <h1>✨ Creador de Personaje ✨</h1>
 
+  <button id="toggleTema">Cambiar tema</button>
+
   <form id="formPersonaje">
     <input type="text" id="nombre" placeholder="Nombre del personaje" required />
 
@@ -30,6 +32,16 @@
 
     <button type="submit">Crear personaje</button>
   </form>
+
+  <select id="filtroClase">
+    <option value="todos">Mostrar todos</option>
+    <option value="Guerrero/a">Guerrero/a</option>
+    <option value="Mago/a">Mago/a</option>
+    <option value="Asesino/a">Asesino/a</option>
+    <option value="Soporte">Soporte</option>
+  </select>
+
+  <button id="borrarTodo">Borrar todos los personajes</button>
 
   <h2>👥 Lista de personajes</h2>
   <ul id="listaPersonajes"></ul>

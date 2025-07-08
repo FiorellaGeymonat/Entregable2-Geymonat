@@ -4,6 +4,12 @@ body {
   color: #f8f8f2;
   text-align: center;
   padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.tema-claro {
+  background-color: #f0f0f0;
+  color: #1e1e2f;
 }
 
 form {
@@ -16,6 +22,11 @@ form {
   gap: 1rem;
   width: 300px;
   margin: 0 auto 2rem;
+  transition: background 0.3s;
+}
+
+body.tema-claro form {
+  background-color: #ffffff;
 }
 
 input, select, button {
@@ -46,4 +57,40 @@ li {
   margin: 0.5rem auto;
   border-radius: 8px;
   width: 320px;
+  transition: background 0.3s;
+}
+
+body.tema-claro li {
+  background-color: #e0e0e0;
+}
+
+#toggleTema {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #8be9fd;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#toggleTema:hover {
+  background-color: #76d3e3;
+}
+
+#borrarTodo {
+  margin-top: 1rem;
+  background-color: #ff5555;
+  color: white;
+}
+
+#borrarTodo:hover {
+  background-color: #ff3b3b;
+}
+
+#filtroClase {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
 }
