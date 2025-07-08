@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creador de Personaje</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>✨ Creador de Personaje ✨</h1>
+
+  <form id="formPersonaje">
+    <input type="text" id="nombre" placeholder="Nombre del personaje" required />
+
+    <select id="clase" required>
+      <option value="" disabled selected>Elige una clase</option>
+      <option value="Guerrero/a">Guerrero/a</option>
+      <option value="Mago/a">Mago/a</option>
+      <option value="Asesino/a">Asesino/a</option>
+      <option value="Soporte">Soporte</option>
+    </select>
+
+    <input type="number" id="nivel" min="1" max="100" placeholder="Nivel de poder" required />
+    <input type="text" id="frase" placeholder="Frase épica" required />
+
+    <label>
+      <input type="checkbox" id="esMain" />
+      ¿Es personaje principal?
+    </label>
+
+    <button type="submit">Crear personaje</button>
+  </form>
+
+  <h2>👥 Lista de personajes</h2>
+  <ul id="listaPersonajes"></ul>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
