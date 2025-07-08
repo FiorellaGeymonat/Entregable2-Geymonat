@@ -77,5 +77,5 @@ toggleTemaBtn.addEventListener("click", () => {
   document.body.classList.toggle("tema-claro");
 });
 
-// Mostrar al cargar
+// Mostrar al  cargar
 renderizarPersonajes();
